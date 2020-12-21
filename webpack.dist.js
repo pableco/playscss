@@ -2,8 +2,8 @@
 const path = require('path');
 const webpack = require('webpack');
 const { merge } = require('webpack-merge');
+const { BundleAnalyzerPlugin } = require('webpack-bundle-analyzer');
 const packageJSON = require('./package.json');
-const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
 const common = require('./webpack.common.js');
 
 const ENTRY_POINTS = {

@@ -4,8 +4,8 @@
   "description": "Example react scss playground",
   "main": "./src/index.js",
   "scripts": {
-    "start": "webpack serve --config ./webpack.dev.js",
-    "dist": "webpack --config ./webpack.prod.js",
+    "start": "webpack-dashboard -- webpack serve --config ./webpack.dev.js",
+    "dist": "webpack --config ./webpack.dist.js",
     "deploy": "webpack --config webpack.prod.js && surge ./dist/ play-scss.surge.sh",
     "test:ci": "NODE_ENV=test jest test",
     "test": "NODE_ENV=test jest test --notify --watch",
