@@ -6,7 +6,7 @@ const packageJSON = require('./package.json');
 const common = require('./webpack.common.js');
 
 const ENTRY_POINTS = {
-    index: ['./src/index.js'],
+    index: ['./template/index.js'],
 };
 
 const OUTPUT_CONFIG = {
