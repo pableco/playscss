@@ -36,6 +36,8 @@ module.exports = merge(common, {
                 VERSION: JSON.stringify(packageJSON.version),
             },
         }),
-        new BundleAnalyzerPlugin(),
+        new BundleAnalyzerPlugin({
+            analyzerMode: 'static',
+        }),
     ],
 });
