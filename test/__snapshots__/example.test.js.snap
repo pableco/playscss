@@ -1,0 +1,33 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`component snapshoot render with all props 1`] = `
+"<section class=\\"listItem\\">
+  <figure class=\\"listItem__figure\\">
+    <figcaption class=\\"listItem__figcaption\\">
+      <h3 class=\\"listItem__title\\">Test title</h3>
+      <h4 class=\\"listItem__subTitle\\">Subtitle test</h4>
+    </figcaption>
+    <div class=\\"listItem__imgFix\\" style=\\"background-image: url(https://source.unsplash.com/random);\\"></div><img class=\\"listItem__img\\" src=\\"https://source.unsplash.com/random\\" alt=\\"Test title image\\">
+    <div class=\\"listItem__content\\">
+      <p class=\\"listItem__description\\">Aenean vitae neque ultricies, egestas eros non, bibendum purus.
+        Suspendisse sodales quam non lectus imperdiet dignissim.</p><button class=\\"listItem__action\\">Call now</button>
+    </div><span class=\\"listItem__extra\\"></span>
+  </figure>
+</section>"
+`;
+
+exports[`component snapshoot render without props 1`] = `
+"<section class=\\"listItem\\">
+  <figure class=\\"listItem__figure\\">
+    <figcaption class=\\"listItem__figcaption\\">
+      <h3 class=\\"listItem__title\\">Test title</h3>
+      <h4 class=\\"listItem__subTitle\\">Subtitle test</h4>
+    </figcaption>
+    <div class=\\"listItem__imgFix\\" style=\\"background-image: url(https://source.unsplash.com/random);\\"></div><img class=\\"listItem__img\\" src=\\"https://source.unsplash.com/random\\" alt=\\"Test title image\\">
+    <div class=\\"listItem__content\\">
+      <p class=\\"listItem__description\\">Aenean vitae neque ultricies, egestas eros non, bibendum purus.
+        Suspendisse sodales quam non lectus imperdiet dignissim.</p><button class=\\"listItem__action\\">Call now</button>
+    </div><span class=\\"listItem__extra\\"></span>
+  </figure>
+</section>"
+`;
