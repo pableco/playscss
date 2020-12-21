@@ -1,10 +1,11 @@
 /* eslint "import/no-extraneous-dependencies": ["error", {"devDependencies": true }] */
 const path = require('path');
+const DashboardPlugin = require('webpack-dashboard/plugin');
 const { merge } = require('webpack-merge');
 const common = require('./webpack.common.js');
 
 const ENTRY_POINTS = {
-    index: ['./src/index.js'],
+    index: ['./template/index.js'],
 };
 
 const OUTPUT_CONFIG = {
@@ -25,6 +26,9 @@ module.exports = merge(common, {
     mode: 'development',
     entry: ENTRY_POINTS,
     output: OUTPUT_CONFIG,
+    plugins: [
+        new DashboardPlugin(),
+    ],
     devServer: {
         contentBase: path.join(__dirname, 'dist'),
         open: true,

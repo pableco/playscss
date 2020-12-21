@@ -1,5 +1,5 @@
 # A template boilerplate example for experiments #
 
-[![build status](https:///REPO_URL/badges/master/build.svg)](https:///REPO_URL/builds)
+![Pull Request](https://github.com/pableco/playscss/workflows/Pull%20Request/badge.svg)
 
 

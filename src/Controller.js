@@ -6,7 +6,8 @@ export default class Controller extends Component {
 
     render() {
         return (
-            <View {...this.props} imgBgStyles={{ backgroundImage: `url(${this.props.imgBg})` }}/>
+            <View {...this.props}
+                imgBgStyles={{ backgroundImage: `url(${this.props.imgBg})` }}/>
         );
     }
 }

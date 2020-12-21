@@ -2,6 +2,7 @@
 const path = require('path');
 const webpack = require('webpack');
 const { merge } = require('webpack-merge');
+const { BundleAnalyzerPlugin } = require('webpack-bundle-analyzer');
 const packageJSON = require('./package.json');
 const common = require('./webpack.common.js');
 
@@ -34,6 +35,9 @@ module.exports = merge(common, {
                 BROWSER: true,
                 VERSION: JSON.stringify(packageJSON.version),
             },
+        }),
+        new BundleAnalyzerPlugin({
+            analyzerMode: 'static',
         }),
     ],
 });
