@@ -1,6 +1,9 @@
 /* eslint "import/no-extraneous-dependencies": ["error", {"devDependencies": true }] */
 const path = require('path');
+const webpack = require('webpack');
 const { merge } = require('webpack-merge');
+const packageJSON = require('./package.json');
+const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
 const common = require('./webpack.common.js');
 
 const ENTRY_POINTS = {
@@ -22,12 +25,17 @@ const OUTPUT_CONFIG = {
 };
 
 module.exports = merge(common, {
-    mode: 'development',
+    mode: 'production',
     entry: ENTRY_POINTS,
     output: OUTPUT_CONFIG,
-    devServer: {
-        contentBase: path.join(__dirname, 'dist'),
-        open: true,
-        port: 8000,
-    },
+    plugins: [
+        new webpack.DefinePlugin({
+            // removes a lot of debugging code in React
+            'process.env': {
+                BROWSER: true,
+                VERSION: JSON.stringify(packageJSON.version),
+            },
+        }),
+        new BundleAnalyzerPlugin(),
+    ],
 });
