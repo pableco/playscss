@@ -10,11 +10,11 @@ function createMarkup(first) {
 const Message = ({ first, second, children }) => (
     <p className="message">
         <span className='message__word message__word--first'>
-            <div dangerouslySetInnerHTML={createMarkup(first)} />
+            <span dangerouslySetInnerHTML={createMarkup(first)} />
             {children}
         </span>
         <span className='message__word message__word--second'>
-            <div dangerouslySetInnerHTML={createMarkup(second)} />
+            <span dangerouslySetInnerHTML={createMarkup(second)} />
             {children}
         </span>
     </p>

@@ -1,13 +1,29 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`component snapshoot render with all props 1`] = `
-"<div id=\\"holder\\">
-  <p class=\\"message\\"><span class=\\"first\\">Ruben's</span><span class=\\"second\\">look</span></p>
-</div>"
+"<main class=\\"wrapper\\">
+  <div class=\\"swing\\">
+    <p class=\\"message\\"><span class=\\"message__word message__word--first\\"><span>Feliz</span></span><span class=\\"message__word message__word--second\\"><span><del>Na</del>vida<del>d</del></span></span></p>
+    <p class=\\"message\\"><span class=\\"message__word message__word--first\\"><span>Feliz</span></span><span class=\\"message__word message__word--second\\"><span><del>Na</del>vida<del>d</del></span></span></p>
+    <p class=\\"message\\"><span class=\\"message__word message__word--first\\"><span>Feliz</span></span><span class=\\"message__word message__word--second\\"><span><del>Na</del>vida<del>d</del></span></span></p>
+    <p class=\\"message\\"><span class=\\"message__word message__word--first\\"><span>Feliz</span>
+      <test-file-stub classname=\\"star\\" alt=\\"Star\\"></test-file-stub></span><span class=\\"message__word message__word--second\\"><span><del>Na</del>vida<del>d</del></span>
+      <test-file-stub classname=\\"star\\" alt=\\"Star\\"></test-file-stub></span>
+    </p>
+  </div>
+</main>"
 `;
 
 exports[`component snapshoot render without props 1`] = `
-"<div id=\\"holder\\">
-  <p class=\\"message\\"><span class=\\"first\\">Ruben's</span><span class=\\"second\\">look</span></p>
-</div>"
+"<main class=\\"wrapper\\">
+  <div class=\\"swing\\">
+    <p class=\\"message\\"><span class=\\"message__word message__word--first\\"><span>Feliz</span></span><span class=\\"message__word message__word--second\\"><span><del>Na</del>vida<del>d</del></span></span></p>
+    <p class=\\"message\\"><span class=\\"message__word message__word--first\\"><span>Feliz</span></span><span class=\\"message__word message__word--second\\"><span><del>Na</del>vida<del>d</del></span></span></p>
+    <p class=\\"message\\"><span class=\\"message__word message__word--first\\"><span>Feliz</span></span><span class=\\"message__word message__word--second\\"><span><del>Na</del>vida<del>d</del></span></span></p>
+    <p class=\\"message\\"><span class=\\"message__word message__word--first\\"><span>Feliz</span>
+      <test-file-stub classname=\\"star\\" alt=\\"Star\\"></test-file-stub></span><span class=\\"message__word message__word--second\\"><span><del>Na</del>vida<del>d</del></span>
+      <test-file-stub classname=\\"star\\" alt=\\"Star\\"></test-file-stub></span>
+    </p>
+  </div>
+</main>"
 `;

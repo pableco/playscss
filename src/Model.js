@@ -13,6 +13,4 @@ export default class Model extends Component {
 Model.defaultProps = {
     first: 'Feliz',
     second: '<del>Na</del>vida<del>d</del>',
-    start: 'star.svg',
-    title: 'Test title',
 };

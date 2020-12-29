@@ -23,16 +23,6 @@ $first-layer-bottom-stroke-color: $stroke-front-color;
 $second-layer-bottom-stroke-color: $stroke-front-color;
 $third-layer-bottom-stroke-color: $stroke-front-color;
 
-@mixin sroke-shadow($color) {
-    -webkit-text-stroke: .3vmin $color;
-    text-shadow:
-    .9vmin .9vmin 0 $color,
-    -.3vmin -.3vmin 0 $color,
-    .3vmin -.3vmin 0 $color,
-    -.3vmin .3vmin 0 $color,
-    .3vmin .3vmin 0 $color;
-}
-
 .wrapper {
     font-family: 'Montserrat', sans-serif;
     text-transform: uppercase;

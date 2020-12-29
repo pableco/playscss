@@ -53,9 +53,9 @@ describe('Example', () => {
 
     it('render changing cta text', () => {
         act(() => {
-            render(<Example cta={'click here'} />, container);
+            render(<Example first={'hello'} />, container);
         });
-        expect(container.querySelector('button').textContent).toBe('click here');
+        expect(container.querySelector('.message__word--first').textContent).toBe('hello');
     });
 
 });
