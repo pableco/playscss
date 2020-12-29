@@ -11,10 +11,8 @@ export default class Model extends Component {
 }
 
 Model.defaultProps = {
-    cta: 'Call now',
-    description: `Aenean vitae neque ultricies, egestas eros non, bibendum purus.
-    Suspendisse sodales quam non lectus imperdiet dignissim.`,
-    imgBg: 'https://source.unsplash.com/random',
-    subTitle: 'Subtitle test',
+    first: 'Feliz',
+    second: '<del>Na</del>vida<del>d</del>',
+    start: 'star.svg',
     title: 'Test title',
 };

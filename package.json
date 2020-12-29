@@ -1,12 +1,12 @@
 {
-  "name": "play-scss",
+  "name": "feliz-navidad",
   "version": "0.0.1",
   "description": "Example react scss playground",
   "main": "./src/index.js",
   "scripts": {
-    "start": "webpack-dashboard -- webpack serve --config ./webpack.dev.js",
+    "start": "webpack serve --config ./webpack.dev.js",
     "dist": "webpack --config ./webpack.dist.js",
-    "deploy": "webpack --config webpack.prod.js && surge ./dist/ play-scss.surge.sh",
+    "deploy": "webpack --config webpack.prod.js && surge ./dist/ feliz-navidad.surge.sh",
     "test:ci": "NODE_ENV=test jest test",
     "test": "NODE_ENV=test jest test --notify --watch",
     "cleancoverage": "rm -rf coverage",

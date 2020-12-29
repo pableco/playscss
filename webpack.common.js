@@ -33,20 +33,13 @@ const CSS_RULES = {
 };
 
 const IMAGES_RULES = {
-    test: /\.(png|svg|jpg|jpeg|gif)$/i,
+    test: /\.(png|jpg|jpeg|gif)$/i,
     type: 'asset/resource',
 };
 
 const SVG_RULES = {
-    test: /\.(svg)/,
-    use: [
-        {
-            loader: 'babel-loader',
-        },
-        {
-            loader: '@svgr/webpack',
-        },
-    ],
+    test: /\.svg$/,
+    use: ['@svgr/webpack'],
 };
 
 module.exports = {

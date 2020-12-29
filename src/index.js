@@ -1,4 +1,4 @@
 import Component from './Model';
-import './main.scss';
+import './_resets.scss';
 
 export default Component;

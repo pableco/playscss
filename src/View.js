@@ -1,29 +1,40 @@
 import React from 'react';
 
+import Star from './star.svg';
+import './swing.scss';
+
+function createMarkup(first) {
+    return { __html: first };
+}
+
+const Message = ({ first, second, children }) => (
+    <p className="message">
+        <span className='message__word message__word--first'>
+            <div dangerouslySetInnerHTML={createMarkup(first)} />
+            {children}
+        </span>
+        <span className='message__word message__word--second'>
+            <div dangerouslySetInnerHTML={createMarkup(second)} />
+            {children}
+        </span>
+    </p>
+);
+
 const View = ({
-    cta,
-    description,
-    extraInfo,
-    imgBg,
-    imgBgStyles,
-    subTitle,
-    title,
+    first,
+    second,
 }) => (
-    <section className="listItem">
-        <figure className="listItem__figure">
-            <figcaption className="listItem__figcaption">
-                <h3 className="listItem__title">{title}</h3>
-                <h4 className="listItem__subTitle">{subTitle}</h4>
-            </figcaption>
-            <div className="listItem__imgFix" style={imgBgStyles}></div>
-            <img className="listItem__img" src={imgBg} alt={`${title} image`} />
-            <div className="listItem__content">
-                <p className="listItem__description">{description}</p>
-                <button className="listItem__action">{cta}</button>
-            </div>
-            <span className="listItem__extra">{extraInfo}</span>
-        </figure>
-    </section>
+    <main className="wrapper">
+        <div className='swing'>
+            <Message second={second} first={first} />
+            <Message second={second} first={first} />
+            <Message second={second} first={first} />
+            <Message second={second} first={first}>
+                <Star className='star' alt="Star" />
+            </Message>
+        </div>
+
+    </main>
 );
 
 export default View;
